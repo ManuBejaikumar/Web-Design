@@ -1,0 +1,245 @@
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0B2239;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #00c6ff;
+}
+
+.nav-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links a.active {
+    background: #222;      /* darker background */
+    color: #fff;           /* white text */
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* SLIDER */
+.slider {
+    margin: 30px;
+    background: #a75959;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.slide {
+    display: none;
+    font-size: 22px;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* NEWS */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* PLAYER GRID */
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.player-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.player-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* FIELD */
+.field {
+    width: 90%;
+    height: 500px;
+    background: green;
+    margin: 40px auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.position {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+}
+
+/* Position coordinates */
+.gk { bottom: 20px; left: 50%; transform: translateX(-50%); }
+.lb { bottom: 120px; left: 15%; }
+.cb1 { bottom: 150px; left: 40%; }
+.cb2 { bottom: 150px; left: 60%; }
+.rb { bottom: 120px; right: 15%; }
+.cm1 { top: 45%; left: 35%; }
+.cm2 { top: 45%; left: 55%; }
+.cam { top: 30%; left: 50%; transform: translateX(-50%); }
+.lw { top: 20%; left: 15%; }
+.rw { top: 20%; right: 15%; }
+.st { top: 10%; left: 50%; transform: translateX(-50%); }
+
+/* MATCHES */
+.match-card {
+    background: #fff;
+    padding: 20px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* CONTACT PAGE */
+.contact-section {
+    padding: 30px;
+}
+
+.contact-box {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-box form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-box button {
+    padding: 12px;
+    border: none;
+    background: #0A2038;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* FOOTER STYLING */
+.footer {
+    background: #0A2038;
+    color: #fff;
+    padding: 30px 20px 10px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1 1 250px;
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #00c6ff;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
